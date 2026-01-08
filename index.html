@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>50 Business Strategies Framework 2026</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 1%;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 1%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 1%;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2d3748;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 10px;
+            color: #718096;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 4px;
+            overflow-x: auto;
+            padding: 8px 0;
+            margin-top: 8px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .definition-section {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .definition-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .definition-icon {
+            font-size: 20px;
+        }
+
+        .definition-content {
+            font-size: 12px;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .definition-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 4px solid #667eea;
+            padding: 12px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+
+        .definition-box-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #667eea;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .definition-box-text {
+            font-size: 11px;
+            color: #2d3748;
+            line-height: 1.5;
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin: 12px 0;
+        }
+
+        .pillar-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pillar-number {
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        .pillar-name {
+            font-size: 10px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 4px;
+        }
+
+        .pillar-desc {
+            font-size: 9px;
+            color: #718096;
+            line-height: 1.3;
+        }
+
+        .tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab {
+            flex-shrink: 0;
+            padding: 6px 12px;
+            background: #e2e8f0;
+            border: none;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #4a5568;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .tab.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .content {
+            display: grid;
+            gap: 8px;
+            padding-bottom: 20px;
+        }
+
+        .strategy-card {
+            background: white;
+            border-radius: 12px;
+            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .strategy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .strategy-card.expanded {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .strategy-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-bottom: 6px;
+        }
+
+        .strategy-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .strategy-brief {
+            font-size: 11px;
+            color: #718096;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        .strategy-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .strategy-card.expanded .strategy-details {
+            max-height: 1000px;
+        }
+
+        .detail-section {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .detail-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: #667eea;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .detail-text {
+            font-size: 11px;
+            color: #4a5568;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
+
+        .detail-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .detail-list li {
+            font-size: 11px;
+            color: #4a5568;
+            padding-left: 16px;
+            margin-bottom: 4px;
+            position: relative;
+            line-height: 1.4;
+        }
+
+        .detail-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .expand-icon {
+            float: right;
+            font-size: 16px;
+            color: #667eea;
+            transition: transform 0.3s ease;
+        }
+
+        .strategy-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .category-hidden {
+            display: none;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+            font-size: 13px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            }
+        }
+
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-text {
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-text">Loading Strategies...</div>
+    </div>
+
+    <div class="header">
+        <h1>🇵🇭 50 Business Strategies Framework 2026</h1>
+        <div class="subtitle">Para sa mga Negosyanteng Pilipino</div>
+        <div class="tabs" id="tabs"></div>
+    </div>
+
+    <div class="content" id="content"></div>
+
+    <script>
+        // 50 Business Strategies Data
+        const strategies = [
+            // DIGITAL TRANSFORMATION (1-10)
+            {
+                id: 1,
+                category: 'Digital',
+                title: 'E-Commerce First Strategy',
+                brief: 'Prioritize online sales channels through Shopee, Lazada, and owned websites.',
+                implementation: 'Start with marketplace presence, then build your own store. Use social commerce on Facebook and Instagram.',
+                benefits: ['Reach nationwide market', 'Lower overhead costs', '24/7 operations', 'Data-driven insights'],
+                pilipinasContext: 'With 85M+ internet users in PH, online shopping is now mainstream. Perfect for Metro Manila and provincial markets.',
+                tools: ['Shopee Seller Center', 'Lazada Seller', 'WooCommerce', 'Facebook Shops']
+            },
+            {
+                id: 2,
+                category: 'Digital',
+                title: 'Social Media Marketing Dominance',
+                brief: 'Leverage Facebook, TikTok, and Instagram for brand building and sales.',
+                implementation: 'Create engaging content daily, use live selling, run targeted ads, and build community.',
+                benefits: ['Free organic reach', 'Direct customer engagement', 'Viral potential', 'Low-cost advertising'],
+                pilipinasContext: 'Filipinos spend 4+ hours daily on social media - highest in the world. Perfect marketing channel.',
+                tools: ['Meta Business Suite', 'TikTok Ads Manager', 'Canva', 'CapCut']
+            },
+            {
+                id: 3,
+                category: 'Digital',
+                title: 'Mobile-First Business Model',
+                brief: 'Design all business processes around smartphone accessibility.',
+                implementation: 'Ensure website is mobile-responsive, accept GCash/Maya, use mobile apps for operations.',
+                benefits: ['Reach 76M mobile users', 'Faster transactions', 'Better customer experience', 'Lower barriers to entry'],
+                pilipinasContext: 'Most Filipinos access internet via mobile. Desktop-only = missing 80% of market.',
+                tools: ['GCash for Business', 'Maya Business', 'Mobile-responsive websites', 'WhatsApp Business']
+            },
+            {
+                id: 4,
+                category: 'Digital',
+                title: 'Digital Payment Integration',
+                brief: 'Accept all major e-wallet and digital payment options.',
+                implementation: 'Integrate GCash, Maya, PayMongo, and bank transfers. Display QR codes prominently.',
+                benefits: ['Faster payments', 'Better cash flow', 'Reduced theft risk', 'Transaction records'],
+                pilipinasContext: 'E-wallet usage surged post-pandemic. Many Filipinos now prefer cashless transactions.',
+                tools: ['GCash', 'Maya', 'PayMongo', 'Dragonpay', 'Coins.ph']
+            },
+            {
+                id: 5,
+                category: 'Digital',
+                title: 'Content Marketing Excellence',
+                brief: 'Create valuable content that attracts and educates customers.',
+                implementation: 'Blog posts, YouTube videos, TikTok tutorials, infographics showing product benefits.',
+                benefits: ['Build authority', 'Organic traffic', 'Customer education', 'Long-term value'],
+                pilipinasContext: 'Filipinos love video content and storytelling. Educational content builds trust.',
+                tools: ['YouTube', 'TikTok', 'WordPress', 'Canva', 'Facebook']
+            },
+            {
+                id: 6,
+                category: 'Digital',
+                title: 'Influencer Collaboration',
+                brief: 'Partner with micro and macro influencers for brand awareness.',
+                implementation: 'Identify relevant influencers, offer product samples, create authentic partnerships.',
+                benefits: ['Instant credibility', 'Targeted reach', 'User-generated content', 'Sales spikes'],
+                pilipinasContext: 'Filipino culture values recommendations from trusted personalities. Very effective strategy.',
+                tools: ['Instagram', 'TikTok', 'YouTube', 'Influencer platforms']
+            },
+            {
+                id: 7,
+                category: 'Digital',
+                title: 'SEO and Local Search Optimization',
+                brief: 'Rank on Google for local searches and product keywords.',
+                implementation: 'Optimize Google My Business, create location pages, build backlinks, use Filipino keywords.',
+                benefits: ['Free organic traffic', 'Local visibility', 'Credibility boost', 'Long-term growth'],
+                pilipinasContext: 'Filipinos Google everything - "near me" searches are huge. Essential for local businesses.',
+                tools: ['Google My Business', 'SEO plugins', 'Google Analytics', 'Google Search Console']
+            },
+            {
+                id: 8,
+                category: 'Digital',
+                title: 'Email Marketing Automation',
+                brief: 'Build email lists and nurture leads through automated campaigns.',
+                implementation: 'Offer lead magnets, segment audience, send personalized emails, track conversions.',
+                benefits: ['Direct communication', 'High ROI', 'Relationship building', 'Repeat sales'],
+                pilipinasContext: 'Growing middle class uses email professionally. Great for B2B and high-value B2C.',
+                tools: ['Mailchimp', 'Sender', 'GetResponse', 'ConvertKit']
+            },
+            {
+                id: 9,
+                category: 'Digital',
+                title: 'Data Analytics and Insights',
+                brief: 'Use data to make informed business decisions and optimize operations.',
+                implementation: 'Track website analytics, sales data, customer behavior. Create dashboards and reports.',
+                benefits: ['Better decisions', 'Identify trends', 'Optimize marketing', 'Increase efficiency'],
+                pilipinasContext: 'Data-driven businesses outperform competitors. Essential for scaling in PH market.',
+                tools: ['Google Analytics', 'Facebook Insights', 'Excel/Google Sheets', 'Tableau']
+            },
+            {
+                id: 10,
+                category: 'Digital',
+                title: 'Chatbot and AI Customer Service',
+                brief: 'Automate customer inquiries and support using AI chatbots.',
+                implementation: 'Deploy Facebook Messenger bots, WhatsApp automation, AI-powered FAQ systems.',
+                benefits: ['24/7 availability', 'Instant responses', 'Reduced labor costs', 'Scalable support'],
+                pilipinasContext: 'Filipinos expect fast responses. Chatbots handle common queries while you focus on sales.',
+                tools: ['ManyChat', 'Chatfuel', 'Tidio', 'Facebook Messenger API']
+            },
+
+            // FINANCIAL MANAGEMENT (11-20)
+            {
+                id: 11,
+                category: 'Financial',
+                title: 'Bootstrap and Lean Startup',
+                brief: 'Start small, minimize expenses, reinvest profits for growth.',
+                implementation: 'Launch with minimal viable product, avoid loans initially, scale gradually with revenue.',
+                benefits: ['No debt burden', 'Full ownership', 'Financial discipline', 'Sustainable growth'],
+                pilipinasContext: 'Most successful Filipino businesses started small. Proves concept before scaling.',
+                tools: ['Personal savings', 'Revenue reinvestment', 'Lean operations']
+            },
+            {
+                id: 12,
+                category: 'Financial',
+                title: 'Government Grant and Financing',
+                brief: 'Access DTI, DOST, and BSP programs for business funding.',
+                implementation: 'Apply for MSME loans, SETUP grants, Negosyo Centers support programs.',
+                benefits: ['Low-interest loans', 'Grants for innovation', 'Business development support', 'Networking'],
+                pilipinasContext: 'Government actively supports MSMEs. Many programs available but underutilized.',
+                tools: ['DTI Negosyo Center', 'DOST SETUP', 'SB Corp', 'Landbank MSME']
+            },
+            {
+                id: 13,
+                category: 'Financial',
+                title: 'Cash Flow Management',
+                brief: 'Monitor daily cash flow to avoid liquidity problems.',
+                implementation: 'Track all income and expenses daily, maintain cash reserves, forecast future needs.',
+                benefits: ['Avoid cash crunches', 'Better planning', 'Improved profitability', 'Business stability'],
+                pilipinasContext: 'Cash flow issues kill most PH startups. Daily monitoring is critical for survival.',
+                tools: ['Excel templates', 'QuickBooks', 'Wave Accounting', 'Manual ledgers']
+            },
+            {
+                id: 14,
+                category: 'Financial',
+                title: 'Multiple Revenue Streams',
+                brief: 'Diversify income sources to reduce business risk.',
+                implementation: 'Add complementary products/services, create passive income, explore B2B and B2C.',
+                benefits: ['Risk reduction', 'Stable income', 'Growth opportunities', 'Market flexibility'],
+                pilipinasContext: 'Economic volatility in PH makes diversification essential. Don\'t rely on one product.',
+                tools: ['Market research', 'Customer feedback', 'Industry trends analysis']
+            },
+            {
+                id: 15,
+                category: 'Financial',
+                title: 'Pricing Strategy Optimization',
+                brief: 'Set competitive yet profitable prices based on value and market.',
+                implementation: 'Analyze competitor pricing, calculate true costs, test different price points.',
+                benefits: ['Maximize profit margins', 'Competitive positioning', 'Value perception', 'Customer retention'],
+                pilipinasContext: 'Price-sensitive market but willing to pay for value. Balance affordability and quality.',
+                tools: ['Competitor analysis', 'Cost calculators', 'A/B testing']
+            },
+            {
+                id: 16,
+                category: 'Financial',
+                title: 'Inventory Management',
+                brief: 'Optimize stock levels to minimize capital tied up in inventory.',
+                implementation: 'Use just-in-time ordering, track fast and slow movers, negotiate supplier terms.',
+                benefits: ['Reduced waste', 'Better cash flow', 'Lower storage costs', 'Fresh products'],
+                pilipinasContext: 'Storage costs high in urban PH. Efficient inventory = better margins.',
+                tools: ['Excel tracking', 'POS systems', 'Inventory apps', 'Barcode scanners']
+            },
+            {
+                id: 17,
+                category: 'Financial',
+                title: 'Expense Reduction Strategy',
+                brief: 'Systematically identify and reduce unnecessary business expenses.',
+                implementation: 'Audit all expenses monthly, negotiate with suppliers, eliminate waste, automate processes.',
+                benefits: ['Higher profit margins', 'Competitive pricing', 'Financial resilience', 'Efficiency gains'],
+                pilipinasContext: 'Small savings add up in tight-margin PH market. Every peso counts.',
+                tools: ['Expense tracking apps', 'Supplier comparison', 'Automation tools']
+            },
+            {
+                id: 18,
+                category: 'Financial',
+                title: 'Financial Record Keeping',
+                brief: 'Maintain accurate and organized financial records.',
+                implementation: 'Use accounting software, keep receipts, separate business and personal finances.',
+                benefits: ['Tax compliance', 'Better decisions', 'Loan applications', 'Audit readiness'],
+                pilipinasContext: 'BIR requirements strict. Good records prevent penalties and legal issues.',
+                tools: ['QuickBooks', 'Wave', 'Excel', 'Physical filing system']
+            },
+            {
+                id: 19,
+                category: 'Financial',
+                title: 'Tax Optimization',
+                brief: 'Legally minimize tax burden through proper planning and compliance.',
+                implementation: 'Work with accountant, maximize deductions, choose right business structure.',
+                benefits: ['Reduced tax liability', 'Avoid penalties', 'Better cash flow', 'Peace of mind'],
+                pilipinasContext: 'PH tax system complex but offers legitimate savings opportunities for compliant businesses.',
+                tools: ['Certified accountant', 'BIR resources', 'Tax software']
+            },
+            {
+                id: 20,
+                category: 'Financial',
+                title: 'Emergency Fund Building',
+                brief: 'Maintain 3-6 months of operating expenses in reserve.',
+                implementation: 'Set aside percentage of monthly profit, keep in accessible but separate account.',
+                benefits: ['Business continuity', 'Stress reduction', 'Opportunity readiness', 'Crisis survival'],
+                pilipinasContext: 'Typhoons, economic shocks, pandemics - PH businesses need reserves for resilience.',
+                tools: ['Savings account', 'Money market funds', 'Liquid investments']
+            },
+
+            // CUSTOMER EXPERIENCE (21-30)
+            {
+                id: 21,
+                category: 'Customer',
+                title: 'Filipino Hospitality Integration',
+                brief: 'Embed warmth and personal touch in every customer interaction.',
+                implementation: 'Train staff on genuine care, remember customer names, go extra mile consistently.',
+                benefits: ['Customer loyalty', 'Word-of-mouth marketing', 'Competitive advantage', 'Higher lifetime value'],
+                pilipinasContext: 'Filipino hospitality is world-famous. Use this cultural strength as business advantage.',
+                tools: ['CRM systems', 'Staff training', 'Customer feedback']
+            },
+            {
+                id: 22,
+                category: 'Customer',
+                title: 'Personalized Customer Service',
+                brief: 'Treat each customer as individual with unique needs.',
+                implementation: 'Track purchase history, remember preferences, offer tailored recommendations.',
+                benefits: ['Customer satisfaction', 'Repeat business', 'Premium pricing power', 'Brand differentiation'],
+                pilipinasContext: 'Filipinos value relationships over transactions. Personal touch builds loyalty.',
+                tools: ['CRM software', 'Notes system', 'Customer database']
+            },
+            {
+                id: 23,
+                category: 'Customer',
+                title: 'Loyalty Program Design',
+                brief: 'Reward repeat customers with points, discounts, and exclusive perks.',
+                implementation: 'Create tiered rewards, celebrate milestones, offer member-only benefits.',
+                benefits: ['Increased retention', 'Higher purchase frequency', 'Customer data collection', 'Predictable revenue'],
+                pilipinasContext: 'Filipinos love loyalty cards and rewards. Effective for building regular customer base.',
+                tools: ['Loyalty apps', 'Punch cards', 'Digital stamps']
+            },
+            {
+                id: 24,
+                category: 'Customer',
+                title: 'Fast Response Time',
+                brief: 'Reply to customer inquiries within minutes, not hours.',
+                implementation: 'Set up notifications, use chatbots, assign customer service staff, monitor all channels.',
+                benefits: ['Customer satisfaction', 'Competitive edge', 'Higher conversion', 'Positive reviews'],
+                pilipinasContext: 'Filipino online shoppers expect quick replies. Slow response = lost sale.',
+                tools: ['Messenger app', 'WhatsApp Business', 'Chatbots', 'CRM systems']
+            },
+            {
+                id: 25,
+                category: 'Customer',
+                title: 'Customer Feedback Loop',
+                brief: 'Actively collect, analyze, and act on customer feedback.',
+                implementation: 'Post-purchase surveys, review monitoring, suggestion box, regular check-ins.',
+                benefits: ['Product improvement', 'Customer satisfaction', 'Innovation ideas', 'Problem prevention'],
+                pilipinasContext: 'Filipinos willing to give feedback if asked. Use insights to improve offerings.',
+                tools: ['Google Forms', 'SurveyMonkey', 'Review platforms', 'Social media polls']
+            },
+            {
+                id: 26,
+                category: 'Customer',
+                title: 'Community Building',
+                brief: 'Create engaged community around your brand.',
+                implementation: 'Facebook group, events, user-generated content, customer stories.',
+                benefits: ['Brand advocates', 'Free marketing', 'Customer insights', 'Network effects'],
+                pilipinasContext: 'Filipinos are community-oriented. Strong community = powerful marketing force.',
+                tools: ['Facebook Groups', 'Viber Communities', 'Discord', 'Events']
+            },
+            {
+                id: 27,
+                category: 'Customer',
+                title: 'Flexible Payment Options',
+                brief: 'Offer multiple payment methods to accommodate all customers.',
+                implementation: 'Cash, e-wallets, bank transfer, installment, credit cards, COD.',
+                benefits: ['Reduced friction', 'Higher conversion', 'Larger purchases', 'Market expansion'],
+                pilipinasContext: 'Payment preferences vary by region and demographic. Flexibility increases sales.',
+                tools: ['GCash', 'Maya', 'PayMongo', 'Home Credit', 'COD services']
+            },
+            {
+                id: 28,
+                category: 'Customer',
+                title: 'Delivery and Logistics Excellence',
+                brief: 'Ensure fast, reliable, and affordable product delivery.',
+                implementation: 'Partner with multiple couriers, offer tracking, pack securely, insure shipments.',
+                benefits: ['Customer satisfaction', 'Reduced complaints', 'Competitive advantage', 'Repeat orders'],
+                pilipinasContext: 'Poor logistics common in PH. Reliable delivery is major differentiator.',
+                tools: ['Lalamove', 'Grab Express', 'J&T', 'LBC', 'Ninja Van']
+            },
+            {
+                id: 29,
+                category: 'Customer',
+                title: 'Post-Sale Support',
+                brief: 'Continue customer relationship after purchase with support and care.',
+                implementation: 'Follow-up messages, troubleshooting help, warranty fulfillment, product education.',
+                benefits: ['Customer loyalty', 'Positive reviews', 'Referrals', 'Reduced returns'],
+                pilipinasContext: 'Many PH businesses neglect post-sale. Great support builds lasting relationships.',
+                tools: ['WhatsApp', 'Messenger', 'Email', 'Phone support']
+            },
+            {
+                id: 30,
+                category: 'Customer',
+                title: 'Complaint Resolution System',
+                brief: 'Handle customer complaints professionally and turn them into opportunities.',
+                implementation: 'Listen empathetically, respond quickly, offer solutions, follow up after resolution.',
+                benefits: ['Retained customers', 'Improved reputation', 'Learning opportunities', 'Testimonials'],
+                pilipinasContext: 'Filipinos forgiving if treated with respect. Good recovery can create loyal customers.',
+                tools: ['CRM ticketing', 'Complaint log', 'Resolution protocols']
+            },
+
+            // OPERATIONS & SCALING (31-40)
+            {
+                id: 31,
+                category: 'Operations',
+                title: 'Standard Operating Procedures',
+                brief: 'Document all business processes for consistency and training.',
+                implementation: 'Write step-by-step guides, create checklists, video record procedures.',
+                benefits: ['Consistency', 'Easy training', 'Quality control', 'Scalability'],
+                pilipinasContext: 'Essential for growing beyond owner-operator. Enables delegation and expansion.',
+                tools: ['Google Docs', 'Notion', 'Video tutorials', 'Flowcharts']
+            },
+            {
+                id: 32,
+                category: 'Operations',
+                title: 'Outsourcing and Delegation',
+                brief: 'Focus on core business by outsourcing non-essential tasks.',
+                implementation: 'Hire virtual assistants, use freelancers, partner with specialists.',
+                benefits: ['Time savings', 'Lower costs', 'Expert execution', 'Scalability'],
+                pilipinasContext: 'PH has abundant skilled freelancers. OnlineJobs.ph, Upwork offer local talent.',
+                tools: ['OnlineJobs.ph', 'Upwork', 'Fiverr', 'Virtual assistant services']
+            },
+            {
+                id: 33,
+                category: 'Operations',
+                title: 'Automation and Technology',
+                brief: 'Automate repetitive tasks to increase efficiency.',
+                implementation: 'Use software for invoicing, inventory, scheduling, customer communication.',
+                benefits: ['Time savings', 'Reduced errors', 'Scalability', 'Cost reduction'],
+                pilipinasContext: 'Affordable cloud software now available in PH. Small investment, big returns.',
+                tools: ['Zapier', 'POS systems', 'Accounting software', 'CRM automation']
+            },
+            {
+                id: 34,
+                category: 'Operations',
+                title: 'Quality Control Systems',
+                brief: 'Implement checks to ensure consistent product/service quality.',
+                implementation: 'Create quality checklists, regular inspections, customer feedback integration.',
+                benefits: ['Customer satisfaction', 'Reduced returns', 'Brand reputation', 'Operational efficiency'],
+                pilipinasContext: 'Inconsistent quality common issue in PH. Reliable quality builds premium brand.',
+                tools: ['Checklists', 'Inspection forms', 'Quality metrics tracking']
+            },
+            {
+                id: 35,
+                category: 'Operations',
+                title: 'Supplier Relationship Management',
+                brief: 'Build strong partnerships with reliable suppliers.',
+                implementation: 'Negotiate terms, maintain communication, pay on time, diversify sources.',
+                benefits: ['Better pricing', 'Priority service', 'Quality assurance', 'Business stability'],
+                pilipinasContext: 'Personal relationships matter in PH business. Good suppliers are strategic assets.',
+                tools: ['Supplier database', 'Communication logs', 'Performance tracking']
+            },
+            {
+                id: 36,
+                category: 'Operations',
+                title: 'Franchise or Licensing Model',
+                brief: 'Scale business through franchising or licensing to partners.',
+                implementation: 'Document systems, create franchise package, recruit qualified franchisees.',
+                benefits: ['Rapid expansion', 'Lower capital needs', 'Geographic reach', 'Revenue from fees'],
+                pilipinasContext: 'Filipinos love franchises - proven model reduces risk. Great for replication.',
+                tools: ['Franchise agreements', 'Training manuals', 'Support systems']
+            },
+            {
+                id: 37,
+                category: 'Operations',
+                title: 'Multi-Location Strategy',
+                brief: 'Expand to multiple locations to increase market coverage.',
+                implementation: 'Test market first, hire local managers, replicate successful formula.',
+                benefits: ['Market expansion', 'Revenue growth', 'Risk distribution', 'Brand visibility'],
+                pilipinasContext: 'PH archipelago geography requires strategic location choices. Start with high-traffic areas.',
+                tools: ['Market research', 'Location analytics', 'Centralized systems']
+            },
+            {
+                id: 38,
+                category: 'Operations',
+                title: 'Productivity Tracking',
+                brief: 'Monitor and optimize team productivity and output.',
+                implementation: 'Set KPIs, track daily performance, provide feedback, recognize achievements.',
+                benefits: ['Improved efficiency', 'Accountability', 'Performance improvement', 'Goal achievement'],
+                pilipinasContext: 'Clear metrics help Filipino teams understand expectations and excel.',
+                tools: ['Trello', 'Asana', 'Time tracking apps', 'Google Sheets']
+            },
+            {
+                id: 39,
+                category: 'Operations',
+                title: 'Crisis Management Planning',
+                brief: 'Prepare for emergencies and business disruptions.',
+                implementation: 'Create emergency protocols, backup systems, insurance coverage, contingency funds.',
+                benefits: ['Business continuity', 'Quick recovery', 'Reduced losses', 'Peace of mind'],
+                pilipinasContext: 'Typhoons, earthquakes, floods - PH businesses must be resilient to natural disasters.',
+                tools: ['Emergency plans', 'Insurance', 'Backup systems', 'Alternative suppliers']
+            },
+            {
+                id: 40,
+                category: 'Operations',
+                title: 'Continuous Improvement Culture',
+                brief: 'Foster mindset of constant learning and optimization.',
+                implementation: 'Regular reviews, encourage suggestions, test improvements, celebrate innovations.',
+                benefits: ['Competitive edge', 'Employee engagement', 'Efficiency gains', 'Innovation'],
+                pilipinasContext: 'Rapidly changing PH market requires adaptability. Continuous improvement ensures relevance.',
+                tools: ['Team meetings', 'Suggestion systems', 'Performance reviews']
+            },
+
+            // GROWTH & INNOVATION (41-50)
+            {
+                id: 41,
+                category: 'Growth',
+                title: 'Market Research and Validation',
+                brief: 'Study market trends and validate ideas before major investment.',
+                implementation: 'Survey target market, analyze competitors, test MVPs, gather feedback.',
+                benefits: ['Reduced risk', 'Better decisions', 'Product-market fit', 'Resource optimization'],
+                pilipinasContext: 'PH market diverse with regional differences. Research prevents costly mistakes.',
+                tools: ['Google Forms', 'Facebook polls', 'Focus groups', 'Industry reports']
+            },
+            {
+                id: 42,
+                category: 'Growth',
+                title: 'Partnership and Collaboration',
+                brief: 'Form strategic alliances with complementary businesses.',
+                implementation: 'Identify partners, create win-win proposals, formalize agreements, maintain relationships.',
+                benefits: ['Market access', 'Shared resources', 'Knowledge exchange', 'Risk sharing'],
+                pilipinasContext: 'Filipino culture values cooperation. Strategic partnerships accelerate growth.',
+                tools: ['Partnership agreements', 'Networking events', 'Business associations']
+            },
+            {
+                id: 43,
+                category: 'Growth',
+                title: 'Export and International Markets',
+                brief: 'Expand beyond Philippines to regional and global markets.',
+                implementation: 'Research export requirements, partner with freight forwarders, join trade missions.',
+                benefits: ['Revenue diversification', 'Currency advantages', 'Larger market', 'Brand prestige'],
+                pilipinasContext: 'PH products competitive globally - OFW connections can help market entry.',
+                tools: ['DTI Export Marketing Bureau', 'Freight forwarders', 'International marketplaces']
+            },
+            {
+                id: 44,
+                category: 'Growth',
+                title: 'Product Innovation and R&D',
+                brief: 'Continuously develop new and improved products.',
+                implementation: 'Listen to customers, monitor trends, test prototypes, iterate based on feedback.',
+                benefits: ['Competitive advantage', 'Higher margins', 'Market leadership', 'Customer excitement'],
+                pilipinasContext: 'Innovation not just for big companies - even small improvements create value.',
+                tools: ['Customer feedback', 'Trend analysis', 'Prototyping', 'Beta testing']
+            },
+            {
+                id: 45,
+                category: 'Growth',
+                title: 'Sustainability and Social Impact',
+                brief: 'Build business with positive environmental and social impact.',
+                implementation: 'Reduce waste, support communities, ethical sourcing, transparent practices.',
+                benefits: ['Brand differentiation', 'Customer loyalty', 'Employee pride', 'Long-term resilience'],
+                pilipinasContext: 'Growing PH middle class values ethical brands. Purpose-driven businesses thrive.',
+                tools: ['Sustainability reporting', 'Community programs', 'Eco-friendly packaging']
+            },
+            {
+                id: 46,
+                category: 'Growth',
+                title: 'Employee Development Program',
+                brief: 'Invest in training and developing your team.',
+                implementation: 'Regular training, skill development, mentorship, career paths.',
+                benefits: ['Better performance', 'Lower turnover', 'Innovation', 'Company culture'],
+                pilipinasContext: 'Filipinos loyal to employers who invest in them. Great talent retention strategy.',
+                tools: ['Online courses', 'Workshops', 'Mentorship programs', 'Certifications']
+            },
+            {
+                id: 47,
+                category: 'Growth',
+                title: 'Niche Market Dominance',
+                brief: 'Focus on specific segment and become category leader.',
+                implementation: 'Identify underserved niche, tailor offerings, build expertise, own the category.',
+                benefits: ['Less competition', 'Premium pricing', 'Customer loyalty', 'Clear positioning'],
+                pilipinasContext: 'Better to dominate small niche than compete in crowded mass market.',
+                tools: ['Market segmentation', 'Customer profiling', 'Specialized marketing']
+            },
+            {
+                id: 48,
+                category: 'Growth',
+                title: 'Strategic Networking',
+                brief: 'Build relationships with influencers, partners, and industry leaders.',
+                implementation: 'Attend events, join associations, contribute value, maintain connections.',
+                benefits: ['Opportunities', 'Mentorship', 'Partnerships', 'Industry insights'],
+                pilipinasContext: 'Personal connections critical in PH business culture. Network = net worth.',
+                tools: ['Business events', 'LinkedIn', 'Trade associations', 'Chambers of commerce']
+            },
+            {
+                id: 49,
+                category: 'Growth',
+                title: 'Intellectual Property Protection',
+                brief: 'Protect brand, innovations, and creative works legally.',
+                implementation: 'Register trademarks, copyrights, patents. Use NDAs with partners.',
+                benefits: ['Legal protection', 'Brand value', 'Competitive moat', 'Investment readiness'],
+                pilipinasContext: 'IP theft common in PH. Early protection prevents costly disputes later.',
+                tools: ['IPO Philippines', 'Trademark registration', 'Legal counsel', 'NDAs']
+            },
+            {
+                id: 50,
+                category: 'Growth',
+                title: 'Exit Strategy Planning',
+                brief: 'Plan long-term vision including succession or business sale.',
+                implementation: 'Document systems, build transferable value, maintain clean records.',
+                benefits: ['Maximize value', 'Smooth transition', 'Options flexibility', 'Legacy planning'],
+                pilipinasContext: 'Even if not selling soon, exit-ready business operates better and worth more.',
+                tools: ['Business valuation', 'Legal documentation', 'Financial records', 'Advisors']
+            }
+        ];
+
+        // Get unique categories
+        const categories = ['📖 Definition', 'All', ...new Set(strategies.map(s => s.category))];
+        let currentCategory = '📖 Definition';
+
+        // Initialize app
+        function init() {
+            renderTabs();
+            renderStrategies();
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+        }
+
+        // Render category tabs
+        function renderTabs() {
+            const tabsContainer = document.getElementById('tabs');
+            categories.forEach(category => {
+                const tab = document.createElement('button');
+                tab.className = `tab ${category === '📖 Definition' ? 'active' : ''}`;
+                tab.textContent = category;
+                tab.onclick = () => filterCategory(category);
+                tabsContainer.appendChild(tab);
+            });
+        }
+
+        // Filter by category
+        function filterCategory(category) {
+            currentCategory = category;
+            
+            // Update active tab
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.toggle('active', tab.textContent === category);
+            });
+
+            renderStrategies();
+        }
+
+        // Render strategy cards
+        function renderStrategies() {
+            const content = document.getElementById('content');
+            content.innerHTML = '';
+
+            // Show definition section
+            if (currentCategory === '📖 Definition') {
+                renderDefinition(content);
+                return;
+            }
+
+            const filtered = currentCategory === 'All' 
+                ? strategies 
+                : strategies.filter(s => s.category === currentCategory);
+
+            if (filtered.length === 0) {
+                content.innerHTML = '<div class="no-results">No strategies found</div>';
+                return;
+            }
+
+            filtered.forEach(strategy => {
+                const card = createStrategyCard(strategy);
+                content.appendChild(card);
+            });
+        }
+
+        // Render definition section
+        function renderDefinition(container) {
+            container.innerHTML = `
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">📚</span>
+                        Ano ang Business Strategy?
+                    </div>
+                    <div class="definition-content">
+                        Ang <strong>Business Strategy</strong> ay isang malinaw na plano at direksyon kung paano mo patatakbuhin at palalakihin ang iyong negosyo upang makamit ang tagumpay sa merkado ng Pilipinas.
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-title">Simpleng Kahulugan</div>
+                        <div class="definition-box-text">
+                            Ito ay ang iyong <em>"game plan"</em> sa negosyo - kung saan ka pupunta, paano ka makakarating doon, at ano ang gagawin mo para manalo laban sa kompetensya.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">🎯</span>
+                        Bakit Kailangan ng Strategy?
+                    </div>
+                    <div class="definition-content">
+                        Sa kompetitibong merkado ng Pilipinas, hindi sapat ang sipag at tiyaga lang. Kailangan mo ng:
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-text">
+                            <strong>✓ Malinaw na direksyon</strong> - Para alam mo kung saan ka pupunta<br><br>
+                            <strong>✓ Mas matalinong desisyon</strong> - Hindi puro trial and error<br><br>
+                            <strong>✓ Competitive advantage</strong> - Paano ka magiging iba sa iba<br><br>
+                            <strong>✓ Efficient na resources</strong> - Maximize ang limited budget at time
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">🏛️</span>
+                        5 Haligi ng Business Strategy
+                    </div>
+                    <div class="pillar-grid">
+                        <div class="pillar-card">
+                            <div class="pillar-number">💻</div>
+                            <div class="pillar-name">DIGITAL</div>
+                            <div class="pillar-desc">Online presence, e-commerce, social media</div>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-number">💰</div>
+                            <div class="pillar-name">FINANCIAL</div>
+                            <div class="pillar-desc">Pera, budget, pricing, cash flow</div>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-number">👥</div>
+                            <div class="pillar-name">CUSTOMER</div>
+                            <div class="pillar-desc">Serbisyo, loyalty, satisfaction</div>
+                        </div>
+                        <div class="pillar-card">
+                            <div class="pillar-number">⚙️</div>
+                            <div class="pillar-name">OPERATIONS</div>
+                            <div class="pillar-desc">Daily ops, systems, efficiency</div>
+                        </div>
+                        <div class="pillar-card" style="grid-column: 1 / -1;">
+                            <div class="pillar-number">📈</div>
+                            <div class="pillar-name">GROWTH</div>
+                            <div class="pillar-desc">Innovation, expansion, long-term vision</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">🇵🇭</span>
+                        Filipino Business Strategy Context
+                    </div>
+                    <div class="definition-content">
+                        Ang mga estratehiya dito ay specially designed para sa:
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-title">Philippine Market Reality</div>
+                        <div class="definition-box-text">
+                            <strong>• Price-sensitive consumers</strong> - Mahalaga ang presyo pero willing magbayad ng mas mahal para sa quality<br><br>
+                            <strong>• Relationship-driven</strong> - Personal connection at trust ang susi sa loyalty<br><br>
+                            <strong>• Mobile-first nation</strong> - 85M+ internet users, karamihan sa mobile<br><br>
+                            <strong>• Social media capital</strong> - Pinakamataas ang usage sa buong mundo<br><br>
+                            <strong>• Growing middle class</strong> - Lumalaki ang purchasing power<br><br>
+                            <strong>• Regional diversity</strong> - Iba-iba ang pangangailangan per region
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">💡</span>
+                        Paano Gamitin ang Framework
+                    </div>
+                    <div class="definition-content">
+                        Hindi mo kailangang gawin lahat ng 50 strategies sabay-sabay!
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-title">Recommended Approach</div>
+                        <div class="definition-box-text">
+                            <strong>STEP 1:</strong> Basahin lahat at alamin kung aling strategies relevant sa iyong negosyo<br><br>
+                            <strong>STEP 2:</strong> Pumili ng 3-5 strategies na priority mo ngayong taon<br><br>
+                            <strong>STEP 3:</strong> I-implement ng isa-isa, hindi lahat ng sabay<br><br>
+                            <strong>STEP 4:</strong> Sukatin ang results at adjust kung kailangan<br><br>
+                            <strong>STEP 5:</strong> Pagkatapos mag-master ng ilang strategies, add more
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">⚡</span>
+                        Quick Start Guide
+                    </div>
+                    <div class="definition-content">
+                        Kung baguhan ka sa business strategy, simulan mo dito:
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-title">Beginner Priorities (Unahin mo)</div>
+                        <div class="definition-box-text">
+                            <strong>1. Cash Flow Management</strong> (#13) - Buhay ng negosyo<br>
+                            <strong>2. Social Media Marketing</strong> (#2) - Libre at powerful<br>
+                            <strong>3. Customer Service</strong> (#22) - Foundation ng loyalty<br>
+                            <strong>4. Mobile-First</strong> (#3) - Essential sa Pilipinas<br>
+                            <strong>5. Digital Payments</strong> (#4) - Modern convenience
+                        </div>
+                    </div>
+                    <div class="definition-box" style="margin-top: 12px;">
+                        <div class="definition-box-title">Advanced Strategies (Pag ready ka na)</div>
+                        <div class="definition-box-text">
+                            <strong>• Multi-location expansion</strong> (#37)<br>
+                            <strong>• Export markets</strong> (#43)<br>
+                            <strong>• Franchise model</strong> (#36)<br>
+                            <strong>• Strategic partnerships</strong> (#42)<br>
+                            <strong>• IP protection</strong> (#49)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="definition-section">
+                    <div class="definition-title">
+                        <span class="definition-icon">🎓</span>
+                        Filipino Business Wisdom
+                    </div>
+                    <div class="definition-box">
+                        <div class="definition-box-text" style="font-style: italic; text-align: center; color: #667eea; font-weight: 600;">
+                            "Ang negosyo ay parang taniman - kailangan ng tamang binhi (strategy), patuloy na pag-aalaga (execution), at pasensya sa paghihintay ng ani (results)."
+                        </div>
+                    </div>
+                    <div class="definition-content" style="margin-top: 12px;">
+                        Tandaan: Walang instant success. Ang mga successful Filipino businesses ay nag-start small, nag-focus sa quality at service, at dahan-dahang lumalaki with solid foundations.
+                    </div>
+                    <div class="definition-box" style="margin-top: 12px; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%); border-left-color: #10b981;">
+                        <div class="definition-box-title" style="color: #10b981;">Simulan na!</div>
+                        <div class="definition-box-text">
+                            Pindutin ang "All" o pumili ng specific category (Digital, Financial, Customer, Operations, Growth) para makita ang 50 strategies. Tap any card para sa full details!
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Create strategy card element
+        function createStrategyCard(strategy) {
+            const card = document.createElement('div');
+            card.className = 'strategy-card';
+            card.innerHTML = `
+                <span class="expand-icon">▼</span>
+                <div class="strategy-number">#${strategy.id}</div>
+                <div class="strategy-title">${strategy.title}</div>
+                <div class="strategy-brief">${strategy.brief}</div>
+                <div class="strategy-details">
+                    <div class="detail-section">
+                        <div class="detail-label">Implementation</div>
+                        <div class="detail-text">${strategy.implementation}</div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-label">Key Benefits</div>
+                        <ul class="detail-list">
+                            ${strategy.benefits.map(b => `<li>${b}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-label">Pilipinas Context</div>
+                        <div class="detail-text">${strategy.pilipinasContext}</div>
+                    </div>
+                    <div class="detail-section">
+                        <div class="detail-label">Recommended Tools</div>
+                        <ul class="detail-list">
+                            ${strategy.tools.map(t => `<li>${t}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+
+            card.onclick = () => {
+                // Close other expanded cards
+                document.querySelectorAll('.strategy-card.expanded').forEach(c => {
+                    if (c !== card) c.classList.remove('expanded');
+                });
+                card.classList.toggle('expanded');
+            };
+
+            return card;
+        }
+
+        // Start app
+        init();
+    </script>
+</body>
+</html>
